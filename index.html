@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Club EX | Change up your life!</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo"/>
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Club Ex</span>
+          <span class="heading-primary--sub">is where change happens</span>
+        </h1>
+        
+        <a href="#section-videos" class="btn btn--white btn--animated">Discover our videos</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+                Exciting tutorials for motivated people!
+              </h2>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+              <h3 class="heading-tertiary u-margin-bottom-small">Start your journey here!</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi modi atque. Officia autem quas, nesciunt ipsa consequatur illo numquam eos debitis error nulla amet iusto! Et sit similique quos.
+              </p>
+
+              <h3 class="heading-tertiary u-margin-bottom-small">Live life like you never have before</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi modi atque. Officia autem quas.
+              </p>
+
+              <a href="#" class="btn-text">Learn More &rarr;</a>
+            </div>
+            <div class="col-1-of-2">
+               <div class="composition">
+                 <img src="img/yoga1.jpg" alt="photo1" class="composition__photo composition__photo--p1">
+                 <img src="img/activemenwomen.jpg" alt="photo2" class="composition__photo composition__photo--p2">
+                 <img src="img/man.jpg" alt="photo3" class="composition__photo composition__photo--p3">
+                </div>
+            </div>
+          </div>
+
+      </section>
+
+      <section class="section-features">
+        <i class="icon-basic-world"></i>
+      </section>
+
+      <section id="section-videos" class="section-videos">
+          <div class="u-center-text u-margin-bottom-big">
+              <h2 class="section-videos__heading heading-secondary">
+                  Pilates Tutorials
+                </h2>
+          </div>
+        <div class="row section-videos__video-position">
+            <div class="col-1-of-3">
+                <div id="example" class="section-videos__video-box">
+                    <img class="section-videos__img" src="img/pilates.png"/>
+                    <p class="section-videos__paragraph">POP Pilates for Beginners</p>
+                    <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                    <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                    <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=lCg_gh_fppI" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                    <p class="section-videos__paragraph">Views: {{ views }}</p>
+                </div>
+              </div>
+              
+              <div class="col-1-of-3">
+                  <div id="example1" class="section-videos__video-box">
+                      <img class="section-videos__img" src="img/pilates.png"/>
+                      <p class="section-videos__paragraph">Intermediate Pilates Mat Workout</p>
+                      <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                      <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                      <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=1gzT-FZ45i0" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                      <p class="section-videos__paragraph">Views: {{ views }}</p>
+                  </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div id="example2" class="section-videos__video-box">
+                        <img class="section-videos__img" src="img/pilates.png"/>
+                        <p class="section-videos__paragraph">Advanced Pilates Workout</p>
+                        <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                        <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                        <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=peqOP2_XvSw" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                        <p class="section-videos__paragraph">Views: {{ views }}</p>
+                    </div>
+                  </div>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="section-videos__heading heading-secondary">
+                Yoga Tutorials
+              </h2>
+        </div>
+      <div class="row section-videos__video-position">
+
+          <div class="col-1-of-3">
+              <div id="example3" class="section-videos__video-box">
+                  <img class="section-videos__img" src="img/yogagirl.jpg"/>
+                  <p class="section-videos__paragraph">Yoga For Beginners</p>
+                  <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                  <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                  <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=v7AYKMP6rOE" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                  <p class="section-videos__paragraph">Views: {{ views }}</p>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div id="example4" class="section-videos__video-box">
+                    <img class="section-videos__img" src="img/yogagirl.jpg"/>
+                    <p class="section-videos__paragraph">Intermediate Yoga</p>
+                    <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                    <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                    <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=Z6jRKThDCBU" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                    <p class="section-videos__paragraph">Views: {{ views }}</p>
+                </div>
+              </div>
+
+              <div class="col-1-of-3">
+                  <div id="example5" class="section-videos__video-box">
+                      <img class="section-videos__img" src="img/yogagirl.jpg"/>
+                      <p class="section-videos__paragraph">Advanced Yoga</p>
+                      <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                      <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                      <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=t2z8ZsAP2Vw" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                      <p class="section-videos__paragraph">Views: {{ views }}</p>
+                  </div>
+                </div>
+        
+      </div>
+      <div class="u-center-text u-margin-bottom-big">
+          <h2 class="section-videos__heading heading-secondary">
+              Boxing Tutorials
+            </h2>
+      </div>
+    <div class="row section-videos__video-position">
+
+        <div class="col-1-of-3">
+            <div id="example6" class="section-videos__video-box">
+                <img class="section-videos__img" src="img/boxing.jpg"/>
+                <p class="section-videos__paragraph">Boxing For Beginners</p>
+                <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=LjeJmHg_S4A" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                <p class="section-videos__paragraph">Views: {{ views }}</p>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+              <div id="example7" class="section-videos__video-box">
+                  <img class="section-videos__img" src="img/boxing.jpg"/>
+                  <p class="section-videos__paragraph">Intermediate Boxing</p>
+                  <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                  <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                  <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=oQBbmgPdqtY" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                  <p class="section-videos__paragraph">Views: {{ views }}</p>
+              </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div id="example8" class="section-videos__video-box">
+                    <img class="section-videos__img" src="img/boxing.jpg"/>
+                    <p class="section-videos__paragraph">Advanced Boxing</p>
+                    <a v-on:click="likes += 1" class="section-videos__like-btn"><i class="icon-basic-heart"></i></a>
+                    <p class="section-videos__paragraph1">Likes: {{ likes }}</p><br>
+                    <a v-on:click="views += 1" href="https://www.youtube.com/watch?v=w7Lu4qHSJMA" target="_blank" class="section-videos__btn btn btn--blue">Watch now</a>
+                    <p class="section-videos__paragraph">Views: {{ views }}</p>
+                </div>
+              </div>
+      
+    </div>
+
+      </section>
+    </main>
+
+    <script>
+        new Vue ({
+          el: '#example',
+          data: { views: 0, likes: 0},
+           })
+          new Vue ({
+          el: '#example1',
+          data: { views: 0, likes: 0},
+           })
+          new Vue ({
+          el: '#example2',
+          data: { views: 0, likes: 0},
+           })
+          new Vue ({
+          el: '#example3',
+          data: { views: 0, likes: 0},
+           })
+           new Vue ({
+          el: '#example4',
+          data: { views: 0, likes: 0},
+           })
+           new Vue ({
+          el: '#example5',
+          data: { views: 0, likes: 0},
+           })
+           new Vue ({
+          el: '#example6',
+          data: { views: 0, likes: 0},
+           })
+           new Vue ({
+          el: '#example7',
+          data: { views: 0, likes: 0},
+           })
+           new Vue ({
+          el: '#example8',
+          data: { views: 0, likes: 0},
+           })
+
+        
+        </script>
+<!--
+      <section class="grid-test">
+        <div class="row">
+          <div class="col-1-of-2">
+            col 1 of 2
+          </div>
+          <div class="col-1-of-2">
+             col 1 of 2
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            col 1 of 3
+          </div>
+          <div class="col-1-of-3">
+             col 1 of 3
+          </div>
+          <div class="col-1-of-3">
+            col 1 of 3
+         </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            col 1 of 3
+          </div>
+          <div class="col-2-of-3">
+             col 2 of 3
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            col 1 of 4
+          </div>
+          <div class="col-1-of-4">
+             col 1 of 4
+          </div>
+          <div class="col-1-of-4">
+            col 1 of 4
+         </div>
+         <div class="col-1-of-4">
+          col 1 of 4
+       </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            col 1 of 4
+          </div>
+          <div class="col-1-of-4">
+             col 1 of 4
+          </div>
+          <div class="col-2-of-4">
+            col 2 of 4
+         </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="col-1-of-4">
+            col 1 of 4
+          </div>
+          <div class="col-3-of-4">
+             col 3 of 4
+          </div>
+        </div>
+      </section>
+      -->
+  </body>
+</html>

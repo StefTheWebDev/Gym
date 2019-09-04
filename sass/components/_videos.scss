@@ -1,0 +1,65 @@
+.section-videos {
+    padding: 10rem 0;
+    height: 330vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      ),
+      url(../img/yoga.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: -13rem;
+    transform: skewY(-7deg);
+
+    &__heading {
+        transform: skewY(7deg);
+        color: $color-white;
+    }
+
+    &__video-box{
+        background-color: rgba($color-white, .8);
+        font-size: 1.5rem;
+        padding: 2.5rem;
+        text-align: center;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rbga($color-black, .15);
+        transition: transform .3s;
+    
+    }
+
+    &__video-position {
+       transform: skewY(7deg);
+    }
+
+    &__img {
+        width: 100%;
+    }
+    &__btn {
+        margin-top: 1px;
+        display: block;
+        
+    }
+    &__like-btn {
+        font-size: 4rem;
+        display: inline-block;
+        color: $color-primary;
+        
+
+        &:active{
+            transform: translateY(5px);
+            
+        }
+        
+    }
+    &__paragraph {
+        margin-top: 1rem;
+        display: block;
+    }
+    &__paragraph1 {
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+}
